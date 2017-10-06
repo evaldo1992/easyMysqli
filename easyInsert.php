@@ -17,7 +17,7 @@ class EasyInsert{
 	public function getId(){
 		return $this->insert_id;
 	}
-	function EasyInsert(&$mysql,$table){
+	function __construct(&$mysql,$table){
 		$this->mysql=$mysql;
 		$this->table=$table;
 		$this->fields=array();
